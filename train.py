@@ -29,12 +29,13 @@ if __name__ == "__main__":
     # Split the data into a training set and test set
     train, test = train_test_split(data)
 
+    #Get prediction column
     train_x = train.drop(["quality"], axis=1)
     test_x = test.drop(["quality"], axis=1)
     train_y = train[["quality"]]
     test_y = test[["quality"]]
 
-    // Read model training parameters
+    #Read model training parameters
     alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 0.3
     l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.3
 
