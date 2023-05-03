@@ -34,6 +34,7 @@ if __name__ == "__main__":
     csv_url = (
         "https://raw.githubusercontent.com/pontusnorman123/devops_tutorial/main/tutorialQuality.csv"
     )
+    data = pd.read_csv(csv_url, sep=";")
 
     # Split the data into training and test sets. (0.75, 0.25) split.
     train, test = train_test_split(data)
