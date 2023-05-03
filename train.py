@@ -1,5 +1,5 @@
 import os
-#import warnings
+import warnings
 import sys
 
 import pandas as pd
@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 if __name__ == "__main__":
     
-    #warnings.filterwarnings("ignore")
+    warnings.filterwarnings("ignore")
     np.random.seed(40)
 
     csv = (
