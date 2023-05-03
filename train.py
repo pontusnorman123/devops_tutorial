@@ -21,10 +21,10 @@ if __name__ == "__main__":
     #warnings.filterwarnings("ignore")
     np.random.seed(40)
 
-    url = (
+    csv = (
         "https://raw.githubusercontent.com/pontusnorman123/devops_tutorial/main/tutorialQuality.csv"
     )
-    data = pd.read_csv(csv_url, sep=";")
+    data = pd.read_csv(csv, sep=";")
 
     # Split the data into a training set and test set
     train, test = train_test_split(data)
